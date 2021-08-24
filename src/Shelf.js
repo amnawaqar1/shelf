@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Header from "./Header";
 import "./index.css";
+
 import Cardlist from "./search";
 
 const Bookdisplay = ({ Data }) => {
@@ -47,12 +48,16 @@ const Bookdisplay = ({ Data }) => {
   return (
     <>
       <Router>
-        {" "}
         <div className="nav">
-          <Link to="/search">+AddBooks</Link>
+          <Link to="/search" target="_blank">
+            +AddBooks
+          </Link>
         </div>
         <Switch>
-          <Route path="/search" Component={Cardlist} />
+          <Route path="/search" exact>
+            {" "}
+            <Cardlist />
+          </Route>
         </Switch>
         <div>
           <div class="bookshelf">

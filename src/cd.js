@@ -75,7 +75,7 @@ const Cb = ({ Data }) => {
                           )
                         }
                       >
-                        None
+                        Not Interested
                       </button>
 
                       <button

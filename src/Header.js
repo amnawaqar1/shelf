@@ -6,7 +6,6 @@ import Bookdisplay from "./Shelf";
 const Header = ({ result }) => {
   return (
     <div>
-      <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/" />
       <header>
         <h1>
           My <span>Reads</span>

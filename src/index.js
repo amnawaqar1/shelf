@@ -12,6 +12,7 @@ const Ap = () => {
       Setdata(response.data);
     });
   }, []);
+
   return <Header result={data} />;
 };
 
